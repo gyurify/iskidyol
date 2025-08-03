@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iskidyol</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f5;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #d19a03bf;
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+      width: 16.66%;
+      position: relative;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    th {
+      background-color: #b59237;
+      color: white;
+    }
+
+    td.subject:hover {
+      transform: scale(1.05);
+      z-index: 1;
+      background-color: #f5f5dc !important;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .time-col {
+      background-color: #eeeeee;
+      font-weight: bold;
+    }
+
+    .color-1 { background-color: #f5f5dc; } /* Beige */
+    .color-2 { background-color: #faf0e6; } /* Linen */
+    .color-3 { background-color: #ffefd5; } /* PapayaWhip */
+    .color-4 { background-color: #ffe4c4; } /* Bisque */
+    .color-5 { background-color: #ffdead; } /* NavajoWhite */
+    .color-6 { background-color: #ffe4b5; } /* Moccasin */
+    .color-7 { background-color: #ffdab9; } /* PeachPuff */
+    .color-8 { background-color: #ffe4e1; } /* MistyRose */
+
+    @media screen and (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      th {
+        display: none;
+      }
+
+      td {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Class Iskidyol - SY 25-26 SEM I | Y1S1</h1>
+  <table>
+    <tr>
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
+    <tr>
+      <td class="time-col">07:30–09:00 AM</td>
+      <td class="subject color-1" data-label="Monday">GEN 001 – Purposive Communication<br/>PTC-405, FLEX</td>
+      <td class="subject color-2" data-label="Tuesday">ITE 366 – Intro to Computing (Lec)<br/>PTC-404</td>
+      <td data-label="Wednesday"></td>
+      <td data-label="Thursday"></td>
+      <td data-label="Friday"></td>
+    </tr>
+    <tr>
+      <td class="time-col">09:00–10:30 AM</td>
+      <td class="subject color-3" data-label="Monday">GEN 002 – Understanding the Self<br/>PTC-405, FLEX</td>
+      <td class="subject color-4" data-label="Tuesday">ITE 366 – Intro to Computing (Lab)<br/>ITS-201</td>
+      <td class="subject color-3" data-label="Wednesday">GEN 002 – Understanding the Self<br/>PTC-405, FLEX</td>
+      <td data-label="Thursday"></td>
+      <td data-label="Friday"></td>
+    </tr>
+    <tr>
+      <td class="time-col">10:30 AM–12:00 PM</td>
+      <td class="subject color-5" data-label="Monday">MAT 152 – Math in the Modern World<br/>PTC-405, FLEX</td>
+      <td data-label="Tuesday"></td>
+      <td class="subject color-5" data-label="Wednesday">MAT 152 – Math in the Modern World<br/>PTC-405, FLEX</td>
+      <td class="subject color-6" data-label="Thursday">GEN 006 – Ethics<br/>PTC-405, FLEX</td>
+      <td data-label="Friday"></td>
+    </tr>
+    <tr>
+      <td class="time-col">12:00–01:30 PM</td>
+      <td data-label="Monday"></td>
+      <td data-label="Tuesday"></td>
+      <td data-label="Wednesday"></td>
+      <td data-label="Thursday"></td>
+      <td data-label="Friday"></td>
+    </tr>
+    <tr>
+      <td class="time-col">01:30–03:00 PM</td>
+      <td class="subject color-7" data-label="Monday">ITE 260 – Comp. Prog. 1 (Lab)<br/>PTC-302</td>
+      <td class="subject color-8" data-label="Tuesday">NST 015 – NSTP 1 (CWTS)<br/>FLEX</td>
+      <td data-label="Wednesday"></td>
+      <td data-label="Thursday"></td>
+      <td data-label="Friday"></td>
+    </tr>
+    <tr>
+      <td class="time-col">03:00–04:00 PM</td>
+      <td class="subject color-7" data-label="Monday">ITE 260 – Comp. Prog. 1 (Lec)<br/>ITS-200</td>
+      <td data-label="Tuesday"></td>
+      <td data-label="Wednesday"></td>
+      <td data-label="Thursday"></td>
+      <td data-label="Friday"></td>
+    </tr>
+    <tr>
+      <td class="time-col">03:00–04:30 PM</td>
+      <td data-label="Monday"></td>
+      <td class="subject color-2" data-label="Tuesday">PED 030 – PATHFit 1<br/>GYM, FLEX</td>
+      <td data-label="Wednesday"></td>
+      <td class="subject color-2" data-label="Thursday">PED 030 – PATHFit 1<br/>GYM, FLEX</td>
+      <td data-label="Friday"></td>
+    </tr>
+  </table>
+</body>
+</html>
